@@ -5,7 +5,7 @@ LABEL description="Devspaces implementation for Python with PostgreSql"
 RUN apt-get update \
  && apt-get install -y ca-certificates curl git net-tools software-properties-common sudo vim wget \
  && apt-get clean \
- && add-apt-repository ppa:jonathonf/python-3.6 \
+ && add-apt-repository ppa:deadsnakes/ppa \
  && apt-get update \
  && apt-get install -y python python3.6 python3.6-dev python3.6-venv software-properties-common sudo vim  \
  && apt-get clean \
